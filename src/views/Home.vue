@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Navbar/>
+    <Main/>
     <Footer/>
   </div>
 </template>
@@ -9,10 +10,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Navbar from '@/components/Navbar.vue'; // @ is an alias to /src
 import Footer from '@/components/Footer.vue'
+import Main from '@/components/homeMain.vue'
 
 @Component({
   components: {
     Navbar,
+    Main,
     Footer
   },
 })
