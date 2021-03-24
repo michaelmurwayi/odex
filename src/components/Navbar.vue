@@ -26,27 +26,12 @@
           >
     </v-text-field>
     
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    <v-toolbar color="white" elevation="0" style="position:absolute; top:8vh; left:0px; right:0px; height:20vh">
-    <div class="col-md-6">
-        <v-img
-            width="40vw"
-            height="15vh"
-=======
+
     <v-toolbar color="white" elevation="0" style="position:absolute; top:60px; left:0px; right:0px; height:18vh">
     <div class="col-md-6">
         <v-img
             width="20vw"
             height="9vh"
->>>>>>> Stashed changes
-=======
-    <v-toolbar color="white" elevation="0" style="position:absolute; top:60px; left:0px; right:0px; height:20vh">
-    <div class="col-md-6">
-        <v-img
-            width="20vw"
-            height="10vh"
->>>>>>> 03b336f7a3f529a41e34694e3bd14ff77e750d20
             class="col-md-6"
             src= "../assets/logo.png"
             style="position:relative; top:5.5vh;"
