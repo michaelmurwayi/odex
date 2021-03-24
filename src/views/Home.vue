@@ -1,8 +1,14 @@
 <template>
   <div class="home">
+    <div class="">
     <Navbar/>
+    </div>
+    <div class="" style="height:600px">
     <Main/>
+    </div>
+    <div class="">
     <Footer/>
+    </div>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-footer dark padless style="width:100vw position:absolute;  top:95vh;">
+    <v-footer dark padless style="width:100vw position:absolute; top:80vh; bottom:0px;">
     <div class="col-md-12 row ml-0" style="background-color:#0074a5;">
       <div class="col-md-3">
         <v-app-bar-title class="ml-3" >Contact Us </v-app-bar-title>
