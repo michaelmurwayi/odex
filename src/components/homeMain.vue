@@ -1,7 +1,11 @@
 <template>
   <v-app  style="position:relative; top:-650px; bottom:20vh; width:100%;">
     <div class="Main">
+<<<<<<< HEAD
     <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up" style="height:500px"
+=======
+    <v-carousel hide-delimiters style="height:500px"
+>>>>>>> 03b336f7a3f529a41e34694e3bd14ff77e750d20
     >
     <v-carousel-item
       v-for="(item,i) in slides"
@@ -186,7 +190,11 @@
     margin:5px;
     width:12vw;
     height:150px;
+<<<<<<< HEAD
     background-color: #CCCCFF;
+=======
+    background-color:#E8E8E8;
+>>>>>>> 03b336f7a3f529a41e34694e3bd14ff77e750d20
     display:flex;
 }
 .container{
