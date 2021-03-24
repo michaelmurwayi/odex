@@ -30,7 +30,8 @@
           </div>
       </v-container>
       </div>
-      <div class="about row">
+
+      <div class="about row" style="position:absolute;">
       
       <v-card
       class="container-fluid"
@@ -153,6 +154,12 @@
             'WATER TREATMENT',
             'SPECIALTIES',
         ],
+        other_links: [
+          'About Us',
+          'Services',
+          'Careers',
+          'Contact Us'
+        ]
       }
     },
   }
@@ -215,6 +222,10 @@
     margin-left: 55px;
   }
   .container{
+    height:auto;
+    display: "flex"
+  }
+  .about{
     height:auto;
     display: "flex"
   }
