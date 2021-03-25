@@ -1,7 +1,7 @@
 <template>
     <v-app class="" style="position:relative; top:0px; height:400px; bottom:; width:100%;">
     <div class="Main">
-    <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up" style="height:300px"
+    <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up" style="height:400px"
     >
     <v-carousel-item
       v-for="(item,i) in slides"
@@ -9,7 +9,7 @@
       :src= "require('../assets/' + item)"
     >
     
-    <v-card class="" style=" postion:absolute; top:100px; left:650px; height:15vh; width: fit-content; background-color:#28b6e7; opacity:0.8;">
+    <v-card class="" style=" postion:absolute; top:150px; left:650px; height:15vh; width: fit-content; background-color:#28b6e7; opacity:0.8;">
         <v-card-title class="" style="position:relative; left:0px; top:20px; font-weight:bold; font-size: 8vh;">Products</v-card-title>
     </v-card>
     
@@ -32,6 +32,7 @@
           
           </div>
       </v-container>
+
       </div>
     </v-app>
 </template>
@@ -70,9 +71,7 @@ export default {
      }
      }
 </script>
-
 <style scoped>
-
 .products_card{
     margin-left:25px;
     width:15vw;

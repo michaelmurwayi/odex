@@ -1,6 +1,5 @@
 <template>
   <v-app>
-
     <v-footer dark padless style="width:100vw; position:absolute; top:80vh; bottom:0px;">
     <div class="col-md-12 row" style="background-color:#0074a5;">
       <div class="col-md-3">
