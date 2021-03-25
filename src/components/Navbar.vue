@@ -25,11 +25,12 @@
           >
     </v-text-field>
     
-    <v-toolbar color="white" elevation="0" style="position:absolute; top:8vh; left:0px; right:0px; height:20vh">
+
+    <v-toolbar color="white" elevation="0" style="position:absolute; top:60px; left:0px; right:0px; height:18vh">
     <div class="col-md-6">
         <v-img
-            width="40vw"
-            height="15vh"
+            width="20vw"
+            height="9vh"
             class="col-md-6"
             src= "../assets/logo.png"
             style="position:relative; top:5.5vh;"
@@ -41,20 +42,17 @@
     <v-row align="end">
 
         <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to=""> Home </router-link></v-list-item>
+        <v-list-item class="text-black"><router-link class="nav"  to="Home"> Home </router-link></v-list-item>
         </v-list-item-content>
        
         <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to=""> Products </router-link></v-list-item>
+        <v-list-item class="text-black"><router-link class="nav"  to="Products"> Products </router-link></v-list-item>
         </v-list-item-content>
 
         <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to=""> Services </router-link></v-list-item>
+        <v-list-item class="text-black"><router-link class="nav"  to="Services"> Services </router-link></v-list-item>
         </v-list-item-content>
 
-        <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to=""> New & Events </router-link></v-list-item>
-        </v-list-item-content>
 
         <v-list-item-content class="text-black">
         <v-list-item class="text-black"><router-link class="nav"  to=""> About us </router-link></v-list-item>
@@ -88,7 +86,7 @@
 <style scoped>
 
 .nav {
-    color: black;
+    color: #28b6e7;
     text-decoration: none;
 }
 
