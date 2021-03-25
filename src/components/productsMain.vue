@@ -1,5 +1,5 @@
 <template>
-    <v-app  style="position:relative; top:-650px; bottom:20vh; width:100%;">
+    <v-app class="" style="position:relative; top:0px; height:400px; bottom:; width:100%;">
     <div class="Main">
     <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up" style="height:300px"
     >
@@ -16,6 +16,23 @@
     </v-carousel-item>
     </v-carousel>
     </div>
+    <div class="products col-md-12  row container-fluid"  style="position:relative; top:2vh; right:0px; left:50px;">
+      <v-container class="col-md-12 ml-1 row container">
+        <div v-for="(product, index) in products" :key="product"  style="position:relative; top:10vh">
+          <v-card class="products_card">
+          <div class="col-md-12">
+          <v-img style="width:60px; height:100px position relative; top:0px; left:60px;" :src="require('../assets/' + product)"></v-img>
+          </div>
+          
+          <div class="col-md-12" style="position:absolute; top:100px; text-align:center; color:#28b6e7; font-size:2vh;">
+            <p>{{products_lable[index]}} </p>
+          </div>
+          
+          </v-card>
+          
+          </div>
+      </v-container>
+      </div>
     </v-app>
 </template>
 <script>
@@ -26,6 +43,28 @@ export default {
             'products_intro.jpg',
             
         ],
+         products: [
+            'kitchen.png',
+            'house.png',
+            'food.png',
+            'conveyer.png',
+            'care.png',
+            'workshop.png',
+            'laundry.png',
+            'water.png',
+            'special.png',
+        ],
+        products_lable: [
+            'KITCHEN HYGIENE',
+            'HOUSE KEEPING',
+            'FOOD & BEVERAGE  ',
+            'CONVEYER SYSTEM',
+            'PERSONAL CARE',
+            'WORKSHOP',
+            'LAUNDRY',
+            'WATER TREATMENT',
+            'SPECIALTIES',
+        ],
       
 }
      }
@@ -34,4 +73,15 @@ export default {
 
 <style scoped>
 
+.products_card{
+    margin-left:25px;
+    width:15vw;
+    height:150px;
+    background-color: ;
+    display:flex;
+}
+.container{
+  height:400px;
+  display: "flex"
+}
 </style>
