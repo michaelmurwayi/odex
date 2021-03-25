@@ -1,6 +1,5 @@
 <template>
-  <v-container>
-    <v-app>
+    <v-app class="" style="height:150px">
     <v-app-bar
       app
       color="#28b6e7"
@@ -70,7 +69,7 @@
     </v-toolbar>
     </v-app-bar>
   </v-app>
-  </v-container>
+
 </template>
 
 <script lang="ts">
