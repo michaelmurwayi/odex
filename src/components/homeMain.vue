@@ -1,15 +1,15 @@
 <template>
-  <v-app  style="position:relative; top:-650px; bottom:20vh; width:100%;">
-    <div class="Main">
-    <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up" style="height:500px"
-    >
+  <v-app>
+    <div class="Main" style="position:relative; top: 5vh; bottom:20vh; width:100%;">
+    <v-carousel class="slide" hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up">
     <v-carousel-item
       v-for="(item,i) in slides"
       :key="i"
       :src= "require('../assets/' + item)"
     ></v-carousel-item>
     </v-carousel>
-    <div class="products col-xs-12 row container-fluid"  style="position:relative; top:20vh">
+    
+    <div class="products col-xs-12 row container-fluid">
       <div class="products_intro col-md-2" >
         <p class="products_header"> Our Product Range </p>
       </div>
@@ -18,7 +18,7 @@
         <div v-for="(product, index) in products" :key="product"  style="position:relative; top:10vh">
           <v-card class="products_card">
           <div class="col-md-12">
-          <v-img style="width:60px; height:80px position relative; top:0px; left:60px;" :src="require('../assets/' + product)"></v-img>
+          <v-img class="product_image" :src="require('../assets/' + product)"></v-img>
           </div>
           
           <div class="col-md-12" style="position:absolute; top:100px; text-align:center; color:#28b6e7; font-size:2vh;">
@@ -31,12 +31,11 @@
       </v-container>
       </div>
 
-      <div class="about row" style="position:absolute;">
+      <div class="about row" style="position:relative; top:55vh;">
       
       <v-card
-      class="container-fluid"
+      class="card"
       max-width="450"
-      style="position:relative; left:40px; top:30vh"
     >
       <v-img
         src="../assets/services.jpg"
@@ -62,9 +61,8 @@
     </v-card>
 
     <v-card
-      class="container-fluid ml-15"
+      class="card"
       max-width="450"
-      style="position:relative; left:40px; top:30vh"
     >
       <v-img
         src="../assets/wecare.jpg"
@@ -90,9 +88,8 @@
     </v-card>
     
     <v-card
-      class="container-fluid ml-15"
+      class="card"
       max-width="450"
-      style="position:relative; left:40px; top:30vh"
     >
       <v-img
         src="../assets/whoweare.jpg"
@@ -165,6 +162,15 @@
   }
 </script>
 <style scoped>
+.slides{
+  position:absolute;
+  top: -650px;
+  height:500px;
+}
+.products{
+    position:relative;
+    top: 70vh;
+}
 .products_intro{
     background-color: #28b6e7;
     color:white;
@@ -182,6 +188,14 @@
     top:"200px";
     font-size: 7vh;
 }
+.product_image{
+  width:100px;
+  height:100px;
+  position: relative;
+  top:0px;
+  left:60px;
+}
+
 .products_card{
     margin:5px;
     width:12vw;
@@ -191,44 +205,87 @@
 }
 .container{
   height:400px;
-  display: "flex"
+  display: flex
+}
+.container-fluid{
+   position:relative;
+   left:40px;
+   top:30vh;
+}
+.card{
+  position:relative;
+  left:40px;
+  top:20vh;
+  max-width: 450;
 }
 
 @media only screen and (max-width: 768px) {
+  .Main{
+    position: relative;
+    right: 0px;
+    width: 800px;
+  }
+  .slides{
+    position: relative;
+    right: 0px;
+    width: 400px;
+  }
   .products{
     background-color: white ;
+    position: absolute;
+    top:80vh;
   }
   .products_intro{
     background-color: #28b6e7;
-    height: 50px;
-    width: 100%;
+    height: 80px;
+    width: 80%;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 0px;
     margin-right: 25px;
     margin-bottom: 0px;
   }
   .products_header{
     position:relative;
-    top:"20px";
+    top:20px;
     font-size: 4vh;
     text-align: center;
   }
   .products_card{
-    margin:5px;
+    margin:px;
     width:60vw;
     height:25vh;
     background-color:#E8E8E8;
     display:flex;
-    margin-left: 55px;
+    margin-left: 5px;
+  }
+  .product_image{
+  width:100px;
+  height:100px;
+  position: relative;
+  top:0px;
+  left:60px;
   }
   .container{
     height:auto;
-    display: "flex"
+    display: flex;
   }
   .about{
     height:auto;
-    display: "flex"
+    position: absolute;
+    top:50vh;
   }
+  .about{
+    position: absolute;
+    top:100vh;
+  
+  }
+  .card{
+  position:relative;
+  left:20px;
+  top:220vh;
+  width: 90vw;
+  margin: 10px;
+}
 }
 
 /* screen size 375px */

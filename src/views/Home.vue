@@ -1,14 +1,12 @@
 <template>
   <div class="home">
-    <div class="">
     <Navbar/>
-    </div>
-    <div class="" style="height:600px">
+    
+    <div class="">
     <Main/>
     </div>
-    <div class="">
     <Footer/>
-    </div>
+    
   </div>
 </template>
 
@@ -16,7 +14,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Navbar from '@/components/Navbar.vue'; // @ is an alias to /src
 import Main from '../components/homeMain.vue'
-import Footer from '@/components/Footer.vue'
+import Footer from '../components/homeFooter.vue'
 
 
 @Component({

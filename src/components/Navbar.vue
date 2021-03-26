@@ -42,7 +42,7 @@
     <v-row align="end">
 
         <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to="Home"> Home </router-link></v-list-item>
+        <v-list-item class="text-black"><router-link class="nav"  to="/"> Home </router-link></v-list-item>
         </v-list-item-content>
        
         <v-list-item-content class="text-black">
@@ -55,7 +55,7 @@
 
 
         <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to=""> About us </router-link></v-list-item>
+        <v-list-item class="text-black"><router-link class="nav"  to="about"> About us </router-link></v-list-item>
         </v-list-item-content>
 
         <v-list-item-content class="text-black">
