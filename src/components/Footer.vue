@@ -76,7 +76,7 @@
 .footer{
   width:100vw;
   position:absolute;
-  top:80vh;
+  top:100vh;
   bottom:0px;
 }
 @media only screen and (max-width: 768px) {

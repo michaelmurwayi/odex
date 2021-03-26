@@ -9,14 +9,14 @@
       :src= "require('../assets/' + item)"
     >
     
-    <v-card class="" style=" postion:absolute; top:150px; left:650px; height:15vh; width: fit-content; background-color:#28b6e7; opacity:0.8;">
+    <v-card class="services_page">
         <v-card-title class="" style="position:relative; left:0px; top:20px; font-weight:bold; font-size: 8vh;">Services</v-card-title>
     </v-card>
     
     </v-carousel-item>
     </v-carousel>
     </div>
-    <div class="services col-md-12  row container-fluid"  style="position:relative; top:10vh; right:0px; left:50px;" v-for="service in services" :key="service">
+    <div class="services col-md-12  row container-fluid"  v-for="service in services" :key="service">
         <ul style="line-height: 2.0em;">
             <li>
                 {{ service  }}
@@ -27,7 +27,7 @@
 
         <p> We are committed to doing this by:</p>
     </div>
-    <div v-for="commit in commits" :key="commit" style="position:relative; top:15vh; right:0px; left:50px;">
+    <div class="commitment" v-for="commit in commits" :key="commit">
         <ul style="line-height: 2.0em;">
             <li>
                 {{ commit  }}
@@ -90,5 +90,43 @@ export default {
 .container{
   height:400px;
   display: "flex"
+}
+.services{
+  position:relative;
+  top:10vh;
+  right:0px;
+  left:50px;
+}
+.commitment{
+     position:relative;
+     top:15vh;
+     right:0px;
+     left:50px;
+}
+.services_page{
+    position:absolute;
+    top:150px;
+    left:650px;
+    height:15vh;
+    width: fit-content;
+    background-color:#28b6e7;
+    opacity:0.8;
+  }
+@media only screen and (max-width: 768px) {
+    .services{
+        position: relative;
+        top:0vh;
+        left: 10px;
+    }
+    
+    .services_page{
+        position:absolute;
+        top:150px;
+        left:50px;
+        height:15vh;
+        width: fit-content;
+        background-color:#28b6e7;
+        opacity:0.8;
+    }
 }
 </style>
