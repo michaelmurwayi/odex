@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-footer dark padless inset  style="width:100vw; position:absolute; top:80vh; bottom:0px;">
+    <v-footer dark padless inset class="footer">
     <div class="col-md-12 row" style="background-color:#0074a5;">
       <div class="col-md-3">
         <v-app-bar-title class="ml-3" >Contact Us </v-app-bar-title>
@@ -73,7 +73,20 @@
   </v-app>
 </template>
 <style scoped>
-
+.footer{
+  width:100vw;
+  position:absolute;
+  top:80vh;
+  bottom:0px;
+}
+@media only screen and (max-width: 768px) {
+ .footer{
+  width:100vw;
+  position:absolute;
+  top: 300vh;
+  bottom:0px;
+} 
+}
 </style>
 <script lang="ts">
 export default {

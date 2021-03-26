@@ -1,5 +1,5 @@
 <template>
-    <v-app class="" style="height:150px">
+    <v-app class="col-md-10" style="height:150px">
     <v-app-bar
       app
       color="#28b6e7"
@@ -21,7 +21,7 @@
             background-color="white"
             solo
             prepend-icon= "mdi-magnify" class="shrink"
-            style="position:relative; top:15px; width:20%; border-radius: 15px 15px 15px 15px;"
+            style="position:relative; top:15px; right:10px; width:20%; border-radius: 15px 15px 15px 15px;"
           >
     </v-text-field>
     
@@ -38,28 +38,28 @@
     </div>
     <div class="col-md-6">
 
-    <v-list style="height:100px; position:relative; top:6vh; background: Transparent;" >
-    <v-row align="end">
+    <v-list class="navigate white">
+    <v-row>
 
-        <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to="/"> Home </router-link></v-list-item>
+        <v-list-item-content>
+        <v-list-item ><router-link class="nav"  to="/"> Home </router-link></v-list-item>
         </v-list-item-content>
        
-        <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to="Products"> Products </router-link></v-list-item>
+        <v-list-item-content >
+        <v-list-item ><router-link class="nav"  to="Products"> Products </router-link></v-list-item>
         </v-list-item-content>
 
-        <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to="Services"> Services </router-link></v-list-item>
+        <v-list-item-content >
+        <v-list-item ><router-link class="nav"  to="Services"> Services </router-link></v-list-item>
+        </v-list-item-content>
+  
+
+        <v-list-item-content >
+        <v-list-item ><router-link class="nav"  to="about"> About us </router-link></v-list-item>
         </v-list-item-content>
 
-
-        <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to="about"> About us </router-link></v-list-item>
-        </v-list-item-content>
-
-        <v-list-item-content class="text-black">
-        <v-list-item class="text-black"><router-link class="nav"  to=""> Contact Us </router-link></v-list-item>
+        <v-list-item-content >
+        <v-list-item ><router-link class="nav"  to=""> Contact Us </router-link></v-list-item>
         </v-list-item-content>
           
 
@@ -88,6 +88,24 @@
 .nav {
     color: #28b6e7;
     text-decoration: none;
+    width: fit-content  ;
 }
 
+.navigate{
+    height:100px;
+    position:relative;
+    right: 10px;
+    top:6vh;
+    background: Transparent;
+}
+@media only screen and (max-width: 768px) {
+  .navigate{
+    height:80px;
+    font-size: 10px;;
+    position:relative;
+    right: 50px;
+    top:8vh;
+    background: Transparent;
+} 
+}
 </style>
