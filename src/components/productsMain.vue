@@ -1,7 +1,7 @@
 <template>
     <v-app class="" style="position:relative; top:0px; height:400px; bottom:; width:100%;">
     <div class="Main">
-    <v-carousel hide-delimiters :controls="false" :indicators="false"  class="slide"
+    <v-carousel hide-delimiters :controls="false" :indicators="false"  class="slide" show-arrows-on-hover
     >
     <v-carousel-item
       v-for="(item,i) in slides"

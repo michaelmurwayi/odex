@@ -1,12 +1,40 @@
 <template>
   <v-app>
-    <div class="Main" style="position:relative; top: 5vh; bottom:20vh; width:100%;">
-    <v-carousel class="slide" hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up">
+    <div class="Main" style=" position:relative  width:100%;">
+    <v-carousel
+    cycle
+    height="800"
+    hide-delimiter-background
+    show-arrows-on-hover
+    >
     <v-carousel-item
-      v-for="(item,i) in slides"
-      :key="i"
-      :src= "require('../assets/' + item)"
-    ></v-carousel-item>
+        v-for="(slide, i) in slides"
+        :key="i"
+      >
+        <v-sheet
+          color="black"
+          height="100%"
+        >
+          <v-row
+            class="fill-height"
+            align="center"
+            justify="center"
+          >
+            <div class="display-3">
+              <v-img
+                :src= "require('../assets/' + slide)"
+                height="800px"
+                width="100vw"
+              ></v-img>
+            </div>
+            <div class="display-4">
+              <h2 style="font-size:8vh; margin-left:5vw;">wide Range of Products</h2>
+              <p style="font-size:5vh; margin-left:5vw;"> Check out our conveyer Lubes </p>
+              <v-btn style=" background-color:white; color:  rgba(0, 116, 165, 0.6); font-size:3vh; margin-left:5vw; position:relative; top: -40px; "> learn More </v-btn>
+            </div>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
     </v-carousel>
     
     <div class="products col-xs-12 row container-fluid">
@@ -15,7 +43,7 @@
       </div>
       
       <v-container class="col-md-9 ml-1 row container">
-        <div v-for="(product, index) in products" :key="product"  style="position:relative; top:10vh">
+        <div v-for="(product, index) in products" :key="product"  style="position:relative; top:0vh">
           <v-card class="products_card">
           <div class="col-md-12">
           <v-img class="product_image" :src="require('../assets/' + product)"></v-img>
@@ -89,7 +117,7 @@
     
     <v-card
       class="card"
-      max-width="450"
+      max-width="450" 
     >
       <v-img
         src="../assets/whoweare.jpg"
@@ -162,14 +190,20 @@
   }
 </script>
 <style scoped>
-.slides{
+.display-4{
   position:absolute;
-  top: -650px;
-  height:500px;
+  opacity: ;
+  top: 150px;
+  left: 0px;
+  background-color: rgba(0, 116, 165, 0.6);
+  height:auto;
+  width: 60vw;
+  font-size: 1vh;
 }
+
 .products{
-    position:relative;
-    top: 70vh;
+    position:absolute;
+    top: -100px;
 }
 .products_intro{
     background-color: #28b6e7;
@@ -177,7 +211,7 @@
     font-family: fantasy;
     height: 400px;
     width: 150px;
-    margin: 40px;
+    margin: 0px;
     display:flex;
     border-radius: 15px 15px 15px 15px;
     display: inline-block;
@@ -185,7 +219,7 @@
 }
 .products_header{
     position:relative;
-    top:"200px";
+    top:"50px";
     font-size: 7vh;
 }
 .product_image{
@@ -215,7 +249,8 @@
 .card{
   position:relative;
   left:40px;
-  top:20vh;
+  top:vh;
+  margin: 30px;
   max-width: 450;
 }
 
@@ -223,7 +258,7 @@
   .Main{
     position: relative;
     right: 0px;
-    width: 800px;
+    width: 100vw;
   }
   .slides{
     position: relative;
@@ -233,14 +268,15 @@
   .products{
     background-color: white ;
     position: absolute;
-    top:80vh;
+    top:120vh;
+    left: 0px;
   }
   .products_intro{
     background-color: #28b6e7;
     height: 80px;
-    width: 80%;
+    width: 100vw;
     margin-top: 25px;
-    margin-left: 0px;
+    margin-left: 15px;
     margin-right: 25px;
     margin-bottom: 0px;
   }
@@ -252,18 +288,18 @@
   }
   .products_card{
     margin:px;
-    width:60vw;
+    width:80vw;
     height:25vh;
     background-color:#E8E8E8;
     display:flex;
-    margin-left: 5px;
+    margin-left: 30px;
   }
   .product_image{
   width:100px;
   height:100px;
   position: relative;
   top:0px;
-  left:60px;
+  left:80px;
   }
   .container{
     height:auto;

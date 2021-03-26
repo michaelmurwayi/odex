@@ -1,10 +1,7 @@
 <template>
   <div class="home">
     <Navbar/>
-    
-    <div class="">
     <Main/>
-    </div>
     <Footer/>
     
   </div>
