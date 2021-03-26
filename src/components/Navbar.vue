@@ -30,9 +30,9 @@
     <div class="col-md-6">
         <v-img
             width="20vw"
-            height="9vh"
+            height="12vh"
             class="col-md-6"
-            src= "../assets/logo.png"
+            src= "../assets/logo.jpg"
             style="position:relative; top:5.5vh;"
     ></v-img>
     </div>
