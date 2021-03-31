@@ -6,6 +6,7 @@
     height="800"
     hide-delimiter-background
     show-arrows-on-hover
+    :show-arrows="false"
     >
     <v-carousel-item
         v-for="(slide, i) in slides"
@@ -27,10 +28,29 @@
                 width="100vw"
               ></v-img>
             </div>
-            <div class="display-4">
-              <h2 style="font-size:8vh; margin-left:5vw;">wide Range of Products</h2>
-              <p style="font-size:5vh; margin-left:5vw;"> Check out our conveyer Lubes </p>
+            <div class="display-4 ">
+              <!-- <h2 style="font-size:8vh; margin-left:5vw;">wide Range of Products</h2>
+              <p style="font-size:5vh; margin-left:5vw;"> Check out our conveyor Lubes </p> -->
+              <v-carousel
+              height="300" 
+              cycle 
+              hide-delimiters
+              show-arrows-on-hover
+              :show-arrows="false"
+              >
+              <v-carousel-item
+                v-for="(header) in headers"
+                :key="header"
+                reverse-transition="fade-transition"
+                transition="fade-transition"
+              >
+              
+              <h2 style="font-size:8vh; margin-left:5vw;"> {{ headers[i].header }} </h2>
+              <p style="font-size:4vh; margin-left:5vw;"> {{ headers[i].text }} </p>
+              
               <v-btn style=" background-color:white; color:  rgba(0, 116, 165, 0.6); font-size:3vh; margin-left:5vw; position:relative; top: -40px; "> learn More </v-btn>
+              </v-carousel-item>
+            </v-carousel>
             </div>
           </v-row>
         </v-sheet>
@@ -73,7 +93,7 @@
       <v-card-title>
         Our Services
       </v-card-title>
-      <v-card-text class="col-md-8 ml-5 text-right">
+      <v-card-text class="col-md-8 ml-3 text-right">
         We take the time to listen, understand and respond to customers' unique cleaning and hygiene needs.
       </v-card-text>
 
@@ -100,7 +120,7 @@
       <v-card-title>
         We Care
       </v-card-title>
-      <v-card-text class="col-md-8 ml-5 text-right">
+      <v-card-text class="col-md-8 ml-3 text-right">
         We are committed to a sustainable environment and that is why we design our products have the lowest total impact on the environment.
       </v-card-text>
 
@@ -184,7 +204,21 @@
           'Services',
           'Careers',
           'Contact Us'
-        ]
+        ],
+         headers: [
+          { 
+            header: 'wide Range of Products',
+            text: "Check out our conveyor Lubes"
+          },
+          { 
+            header: 'We are the Hygiene Solution',
+            text: "we have a wide range of Housekeeping Products"
+          },
+          { 
+            header: '25 years of Experience',
+            text: "we manufacture specialized detergents and sanitation products"
+          },
+      ]
       }
     },
   }

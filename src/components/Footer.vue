@@ -5,14 +5,12 @@
       <div class="col-md-3">
         <v-app-bar-title class="ml-3" >Contact Us </v-app-bar-title>
         <div class="col-md-8">
-        <p>Odex Chemicals Limited,
-          Kyang’ombe Road, Off Mombasa Road,
-          Behind Ramtons, Opposite Clique,
-          P.O Box 72390 – 00200,
-          Nairobi, Kenya.
-          Tel: 020-2347131/32
-          Mobile: 0713064662
-          Email: info@odexchem.co.ke
+        <p>Lower Kabete Road
+          Nairobi
+          Kenya
+          Telephone:+254 722 511 646 
+          Email: info@medilab.co.ke
+          Website: www.medilab.co.ke
       </p>
       </div>
       </div>
@@ -36,15 +34,27 @@
       <div class="col-md-3">
         <v-app-bar-title class="ml-3" >SUBSCRIBE TO NEWSLETTER </v-app-bar-title>
         <div class="col-md-8">
-        <p>Odex Chemicals Limited,
-          Kyang’ombe Road, Off Mombasa Road,
-          Behind Ramtons, Opposite Clique,
-          P.O Box 72390 – 00200,
-          Nairobi, Kenya.
-          Tel: 020-2347131/32
-          Mobile: 0713064662
-          Email: info@odexchem.co.ke
-      </p>
+        <v-text-field
+            name="search"
+            label="Search"
+            placeholder= "search"
+            height="5%"
+            width= "30%"
+            background-color="white"
+            solo
+          >
+      </v-text-field>
+        <v-text-field
+            name="search"
+            label="Search"
+            placeholder= "Subscribe"
+            height="5%"
+            width= "50%"
+            background-color="white"
+            solo
+          >
+      </v-text-field>
+        <v-btn style="background-color:white; text-color:black;" aria-placeholder="SUBSCRIBE" class="white">SUBSCRIBE</v-btn>
       </div>
       </div>
 

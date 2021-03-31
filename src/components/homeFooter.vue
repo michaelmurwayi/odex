@@ -1,18 +1,16 @@
 <template>
   <v-app>
-    <v-footer dark padless inset  class="footer">
-    <div class="col-md-12 row" style="background-color:#0074a5;">
+    <v-footer dark padless inset fluid class="footer">
+    <div class="col-md-12 row" style="background-color:#0074a5; position:relative; left:12px">
       <div class="col-md-3">
         <v-app-bar-title class="ml-3" >Contact Us </v-app-bar-title>
         <div class="col-md-8">
-        <p>Odex Chemicals Limited,
-          Kyang’ombe Road, Off Mombasa Road,
-          Behind Ramtons, Opposite Clique,
-          P.O Box 72390 – 00200,
-          Nairobi, Kenya.
-          Tel: 020-2347131/32
-          Mobile: 0713064662
-          Email: info@odexchem.co.ke
+        <p>Lower Kabete Road
+          Nairobi
+          Kenya
+          Telephone:+254 722 511 646 
+          Email: info@medilab.co.ke
+          Website: www.medilab.co.ke
       </p>
       </div>
       </div>
@@ -36,20 +34,33 @@
       <div class="col-md-3">
         <v-app-bar-title class="ml-3" >SUBSCRIBE TO NEWSLETTER </v-app-bar-title>
         <div class="col-md-8">
-        <p>Odex Chemicals Limited,
-          Kyang’ombe Road, Off Mombasa Road,
-          Behind Ramtons, Opposite Clique,
-          P.O Box 72390 – 00200,
-          Nairobi, Kenya.
-          Tel: 020-2347131/32
-          Mobile: 0713064662
-          Email: info@odexchem.co.ke
-      </p>
+        <v-text-field
+            name="search"
+            label="Search"
+            placeholder= "search"
+            height="5%"
+            width= "30%"
+            background-color="white"
+            solo
+          >
+      </v-text-field>
+        <v-text-field
+            name="search"
+            label="Search"
+            placeholder= "Subscribe"
+            height="5%"
+            width= "50%"
+            background-color="white"
+            solo
+          >
+      </v-text-field>
+        <v-btn style="background-color:white; text-color:black;" aria-placeholder="SUBSCRIBE" class="white">SUBSCRIBE</v-btn>
+
       </div>
       </div>
 
     </div>
-    <div class="col-md-12 text-center" style="background-color: #28b6e7">
+    <div class="col-md-12 copyright text-center">
     <p> Copyright ©{{ new Date().getFullYear() }}. Medilab Allied Limited. All Rights Reserved.</p>
         
     </div>
@@ -65,14 +76,26 @@
     top:70vh;
     bottom:0px;
 }
+.copyright{
+     background-color: #28b6e7;
+     position:absolute;
+     top:50vh;
+  }
 
 @media only screen and (max-width: 768px) {
   .footer{
     width:100vw;
     position:absolute;
-    top:100vh;
+    top:300vh;
+    right: 10px;
     bottom:0px;
 }
+  .copyright{
+     background-color: #28b6e7;
+     position:absolute;
+     top:163vh;
+     left: 10px;
+  }
 }
 </style>
 <script lang="ts">

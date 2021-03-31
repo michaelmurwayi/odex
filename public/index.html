@@ -24,8 +24,14 @@
     body{
       height: fit-content;
       align-self: start;
-      /* overflow: visible;
-      overflow-x: hidden; */
+      height: auto;
+      overflow: scroll;
+      overflow-x: hidden;
     }
+    ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    
   </style>
 </html>

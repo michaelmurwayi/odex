@@ -1,7 +1,7 @@
 <template>
     <v-app  style="position:relative; top:0px; bottom:20vh; width:100%;">
     <div class="Main">
-    <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up" style="height:400px"
+    <v-carousel hide-delimiters :controls="false" :show-arrows="false" :indicators="false" :interval="3000" direction="up" style="height:400px"
     >
     <v-carousel-item
       v-for="(item,i) in slides"
