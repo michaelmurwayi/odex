@@ -80,7 +80,7 @@
       </v-container>
       </div>
 
-      <div class="about row " style="position:absolute; top:150vh; right:10px; left:10px; background-position: 0 0; background-size: 100vw 100vh;">
+      <div class="about row " style="position:absolute; top:160vh; right:10px; left:10px; background-position: 0 0; background-size: 100vw 100vh;">
       
       <v-card
       class="card"
@@ -253,7 +253,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 400px;
     width: 150px;
-    margin-left: 50px;
+    margin-left: 80px;
     display:flex;
     border-radius: 15px 15px 15px 15px;
     display: inline-block;
@@ -261,8 +261,11 @@
 }
 .products_header{
     position:relative;
-    top:"50px";
-    font-size: 7vh;
+    top:"150px";
+    font-size: 8vh;
+    font-family: cursive;
+    text-align: right;
+    margin-top: 60px;
 }
 .product_image{
   width:100px;

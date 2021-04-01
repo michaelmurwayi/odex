@@ -3,9 +3,9 @@
     <v-footer dark padless inset fluid class="footer">
     <div class="col-md-12 row" style="background-color:#0074a5; position:relative; left:12px">
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >Contact Us </v-app-bar-title>
-        <div class="col-md-8">
-        <p>
+        <v-app-bar-title class="ml-3" style="font-size:4vh;">Contact Us </v-app-bar-title>
+        <div class="col-md-8" style="line-height: 1.5em;">
+        <p style="font-size:1.7vh; color:black">
           MEDILAB AND ALLIED PRODUCTS (K)LTD,
           GENERAL WARUINGE ROAD,
           OLD RACE COURSE, STAREHE COURT 7638 (2),
@@ -23,23 +23,23 @@
       </div>
 
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >Product Range </v-app-bar-title>
-        <div class="col-md-8" v-for="product in products_label" :key= product style="line-height:0.1em;">
-        <p>
+        <v-app-bar-title class="ml-3" style="font-size:4vh;">Product Range </v-app-bar-title>
+        <div class="col-md-8" v-for="product in products_label" :key= product style="line-height:0.05em;">
+        <p style="font-size:1.5vh; color:black">
           {{ product }}
         </p>
       </div>
       </div>
 
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >OTHER LINKS</v-app-bar-title>
+        <v-app-bar-title class="ml-3" style="font-size:4vh;">OTHER LINKS</v-app-bar-title>
         <div class="col-md-8" v-for="link in other_links" :key= link style="line-height:0.1em;">
-        <p> {{ link }} </p>
+        <p style="font-size:1.5vh; color:black"> {{ link }} </p>
       </div>
       </div>
 
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >SUBSCRIBE TO NEWSLETTER </v-app-bar-title>
+        <v-app-bar-title class="ml-3" style="font-size:3vh;">SUBSCRIBE TO NEWSLETTER </v-app-bar-title>
         <div class="col-md-8">
         <v-text-field
             name="search"
