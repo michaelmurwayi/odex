@@ -1,8 +1,9 @@
 <template>
   <v-app>
-    <div class="Main" style=" position:relative  width:100%;">
+    <div class="Main" style=" position:absolute; top:-130px; width:100%;">
     <v-carousel
     cycle
+    
     height="800"
     hide-delimiter-background
     show-arrows-on-hover
@@ -29,8 +30,7 @@
               ></v-img>
             </div>
             <div class="display-4 ">
-              <!-- <h2 style="font-size:8vh; margin-left:5vw;">wide Range of Products</h2>
-              <p style="font-size:5vh; margin-left:5vw;"> Check out our conveyor Lubes </p> -->
+              
               <v-carousel
               height="300" 
               cycle 
@@ -56,8 +56,9 @@
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
+    </div>
     
-    <div class="products col-xs-12 row container-fluid">
+    <div class="products col-md-12 row container-fluid">
       <div class="products_intro col-md-2" >
         <p class="products_header"> Our Product Range </p>
       </div>
@@ -79,11 +80,13 @@
       </v-container>
       </div>
 
-      <div class="about row" style="position:relative; top:55vh;">
+      <div class="about row " style="position:absolute; top:150vh; right:10px; left:10px; background-position: 0 0; background-size: 100vw 100vh;">
       
       <v-card
       class="card"
       max-width="450"
+      shaped
+      style="box-shadow: 5px 5px 5px 5px grey;"
     >
       <v-img
         src="../assets/services.jpg"
@@ -93,7 +96,7 @@
       <v-card-title>
         Our Services
       </v-card-title>
-      <v-card-text class="col-md-8 ml-3 text-right">
+      <v-card-text class="col-md-12 text-justified">
         We take the time to listen, understand and respond to customers' unique cleaning and hygiene needs.
       </v-card-text>
 
@@ -111,6 +114,8 @@
     <v-card
       class="card"
       max-width="450"
+      shaped
+      style="box-shadow: 5px 5px 5px 5px grey;"
     >
       <v-img
         src="../assets/wecare.jpg"
@@ -120,7 +125,7 @@
       <v-card-title>
         We Care
       </v-card-title>
-      <v-card-text class="col-md-8 ml-3 text-right">
+      <v-card-text class="col-md-12 text-justified">
         We are committed to a sustainable environment and that is why we design our products have the lowest total impact on the environment.
       </v-card-text>
 
@@ -128,6 +133,7 @@
         <v-btn
           shaped
           color="primary"
+          right
         >
           Find Out More
         </v-btn>
@@ -137,7 +143,9 @@
     
     <v-card
       class="card"
-      max-width="450" 
+      max-width="450"
+      shaped 
+      style="box-shadow: 5px 5px 5px 5px grey;"
     >
       <v-img
         src="../assets/whoweare.jpg"
@@ -147,7 +155,7 @@
       <v-card-title>
         Who We Are 
       </v-card-title>
-      <v-card-text>
+      <v-card-text class="col-md-12 text-justified">
         We are committed to providing viable and cost effective hygiene products, solutions and services for its customers across various sectors.
       </v-card-text>
 
@@ -163,7 +171,6 @@
     </v-card>
 
       </div>
-    </div>
   </v-app>
 
 </template>
@@ -237,15 +244,16 @@
 
 .products{
     position:absolute;
-    top: -100px;
+    background-color:;
+    margin-top: 670px;
 }
 .products_intro{
     background-color: #28b6e7;
     color:white;
-    font-family: fantasy;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 400px;
     width: 150px;
-    margin: 0px;
+    margin-left: 50px;
     display:flex;
     border-radius: 15px 15px 15px 15px;
     display: inline-block;
@@ -266,7 +274,7 @@
 
 .products_card{
     margin:5px;
-    width:12vw;
+    width:15vw;
     height:150px;
     background-color: #CCCCFF;
     display:flex;
@@ -275,11 +283,7 @@
   height:400px;
   display: flex
 }
-.container-fluid{
-   position:relative;
-   left:40px;
-   top:30vh;
-}
+
 .card{
   position:relative;
   left:40px;
@@ -350,7 +354,7 @@
   
   }
   .card{
-  position:relative;
+  position:absolute;
   left:20px;
   top:220vh;
   width: 90vw;

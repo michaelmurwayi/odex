@@ -5,13 +5,20 @@
       <div class="col-md-3">
         <v-app-bar-title class="ml-3" >Contact Us </v-app-bar-title>
         <div class="col-md-8">
-        <p>Lower Kabete Road
-          Nairobi
-          Kenya
-          Telephone:+254 722 511 646 
-          Email: info@medilab.co.ke
-          Website: www.medilab.co.ke
-      </p>
+        <p>
+          MEDILAB AND ALLIED PRODUCTS (K)LTD,
+          GENERAL WARUINGE ROAD,
+          OLD RACE COURSE, STAREHE COURT 7638 (2),
+          P.O BOX 14705-00400,
+          NAIROBI, KENYA
+          TEL: +254 721 811 499, +254 734 768
+          110, +254 020 4401525, +254 774 768
+          110
+          EMAIL: sales@medilaballied.com
+          info@medilaballied.com
+
+          medilab.alliedproductsltd@gmail.com
+        </p>
       </div>
       </div>
 
@@ -73,7 +80,7 @@
 .footer{
     width:100vw;
     position:absolute;
-    top:70vh;
+    top:150vh;
     bottom:0px;
 }
 .copyright{

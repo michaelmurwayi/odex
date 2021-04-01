@@ -4,8 +4,8 @@
       app
       color="#28b6e7"
       dark
-      elevation="0"
-      height="60vh"
+      elevation="10"
+      height="50vh"
     >
     
       <v-spacer></v-spacer>
@@ -27,10 +27,10 @@
     </v-text-field>
     
 
-    <v-toolbar color="white" elevation="0" style="position:absolute; top:60px; left:0px; right:0px; height:18vh">
+    <v-toolbar color="white" elevation="0" style="position:absolute; top:51px; left:0px; right:0px; height:15vh">
     <div class="col-md-6">
         <v-img
-            width="100px"
+            width="150px"
             height="12gvh"
             class="col-md-6"
             src= "../assets/logo.jpg"
@@ -148,10 +148,10 @@ a:hover,
 
 @media only screen and (max-width: 768px) {
   .navigate{
-    height:40px;
+    height:30px;
     width: 100vw;
     font-size: 2.5vw;
-    position:relative;
+    position:static;
     right: 200px;
     /* left: -1s0px; */
     padding-left: 20px;
