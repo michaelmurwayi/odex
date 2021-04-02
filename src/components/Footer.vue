@@ -1,38 +1,45 @@
 <template>
   <v-app>
-    <v-footer dark padless inset class="footer">
-    <div class="col-md-12 row" style="background-color:#0074a5;">
+    <v-footer dark padless inset fluid class="footer">
+    <div class="col-md-12 row" style="background-color:#0074a5; position:relative; left:12px">
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >Contact Us </v-app-bar-title>
-        <div class="col-md-8">
-        <p>Lower Kabete Road
-          Nairobi
-          Kenya
-          Telephone:+254 722 511 646 
-          Email: info@medilab.co.ke
-          Website: www.medilab.co.ke
-      </p>
+        <v-app-bar-title class="ml-3" style="font-size:4vh;">Contact Us </v-app-bar-title>
+        <div class="col-md-8" style="line-height: 1.5em;">
+        <p style="font-size:1.7vh; color:black">
+          MEDILAB AND ALLIED PRODUCTS (K)LTD,
+          GENERAL WARUINGE ROAD,
+          OLD RACE COURSE, STAREHE COURT 7638 (2),
+          P.O BOX 14705-00400,
+          NAIROBI, KENYA
+          TEL: +254 721 811 499, +254 734 768
+          110, +254 020 4401525, +254 774 768
+          110
+          EMAIL: sales@medilaballied.com
+          info@medilaballied.com
+
+          medilab.alliedproductsltd@gmail.com
+        </p>
       </div>
       </div>
 
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >Product Range </v-app-bar-title>
-        <div class="col-md-8" v-for="product in products_label" :key= product style="line-height:0.1em;">
-        <p>
+        <v-app-bar-title class="ml-3" style="font-size:4vh;">Product Range </v-app-bar-title>
+        <div class="col-md-8" v-for="product in products_label" :key= product style="line-height:0.05em;">
+        <p style="font-size:1.5vh; color:black">
           {{ product }}
         </p>
       </div>
       </div>
 
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >OTHER LINKS</v-app-bar-title>
+        <v-app-bar-title class="ml-3" style="font-size:4vh;">OTHER LINKS</v-app-bar-title>
         <div class="col-md-8" v-for="link in other_links" :key= link style="line-height:0.1em;">
-        <p> {{ link }} </p>
+        <p style="font-size:1.5vh; color:black"> {{ link }} </p>
       </div>
       </div>
 
       <div class="col-md-3">
-        <v-app-bar-title class="ml-3" >SUBSCRIBE TO NEWSLETTER </v-app-bar-title>
+        <v-app-bar-title class="ml-3" style="font-size:3vh;">SUBSCRIBE TO NEWSLETTER </v-app-bar-title>
         <div class="col-md-8">
         <v-text-field
             name="search"
@@ -55,12 +62,13 @@
           >
       </v-text-field>
         <v-btn style="background-color:white; text-color:black;" aria-placeholder="SUBSCRIBE" class="white">SUBSCRIBE</v-btn>
+
       </div>
       </div>
 
     </div>
-    <div class="copyright col-md-12 text-center">
-    <p> Copyright © 2020. Odex Chemicals Limited. All Rights Reserved.</p>
+    <div class="col-md-12 copyright text-center">
+    <p> Copyright ©{{ new Date().getFullYear() }}. Medilab Allied Limited. All Rights Reserved.</p>
         
     </div>
     </v-footer>
@@ -70,27 +78,31 @@
 </template>
 <style scoped>
 .footer{
-  width:100vw;
-  position:absolute;
-  top:100vh;
-  bottom:0px;
+    width:100vw;
+    position:absolute;
+    top:155vh;
+    bottom:0px;
 }
 .copyright{
-  background-color: #28b6e7
-}
+     background-color: #28b6e7;
+     position:absolute;
+     top:50vh;
+  }
+
 @media only screen and (max-width: 768px) {
- .footer{
-  width:100vw;
-  position:absolute;
-  top: 300vh;
-  bottom:0px;
-} 
-.copyright{
-  position: relative;
-  width: 100vw;
-  top:10px;
-  right: 0px;
+  .footer{
+    width:100vw;
+    position:absolute;
+    top:300vh;
+    right: 10px;
+    bottom:0px;
 }
+  .copyright{
+     background-color: #28b6e7;
+     position:absolute;
+     top:163vh;
+     left: 10px;
+  }
 }
 </style>
 <script lang="ts">
@@ -120,4 +132,3 @@ export default {
     }
 };
 </script>
-

@@ -1,5 +1,5 @@
 <template>
-    <v-app class="" style="position:relative; top:0px; height:400px; bottom:; width:100%;">
+    <v-app class="" style="position:absolute; top:20vh; height:400px; bottom:; width:100%;">
     <div class="Main">
     <v-carousel hide-delimiters :controls="false" :indicators="false" :show-arrows="false"  class="slide" show-arrows-on-hover
     >
@@ -16,15 +16,15 @@
     </v-carousel-item>
     </v-carousel>
     </div>
-    <div class="products col-md-12  row container-fluid"  style="position:relative; top:2vh; right:0px; left:50px;">
-      <v-container class="col-md-12 ml-1 row container">
-        <div v-for="(product, index) in products" :key="product"  style="position:relative; top:5vh; margin-bottom:10px">
+    <div class="products col-md-12  row container-fluid"  style="position:absolute; top:60vh; width:100vw;">
+      <v-container class="col-md-12  row container">
+        <div v-for="(product, index) in products" :key="product"  style="position:relative; top:10vh; margin-bottom:10vh">
           <v-card class="products_card">
           <div class="col-md-12">
-          <v-img style="width:60px; height:100px position relative; top:0px; left:60px;" :src="require('../assets/' + product)"></v-img>
+          <v-img style="width:80px; height:150px position relative; top:0px; left:90px;" :src="require('../assets/' + product)"></v-img>
           </div>
           
-          <div class="col-md-12" style="position:absolute; top:100px; text-align:center; color:#28b6e7; font-size:2vh;">
+          <div class="col-md-12" style="position:absolute; top:120px; text-align:center; color:#28b6e7; font-size:2vh;">
             <p>{{products_lable[index]}} </p>
           </div>
           
@@ -82,14 +82,15 @@ export default {
     opacity:0.8;
 }
 .products_card{
-    margin-left:25px;
-    width:15vw;
-    height:150px;
-    background-color: ;
+    margin-left:50px;
+    width:18vw;
+    height:180px;
     display:flex;
 }
 .container{
-  height:400px;
+  background-color:;
+  margin-top: 20px;
+  height:850px;
   display: "flex"
 }
 @media only screen and (max-width: 768px) {
