@@ -1,11 +1,7 @@
 <template>
   <div class="" style="height:100vh;">
     <Navbar/>
-    
-    <div class="" style="height:50vh; position:relative; top:0px;">
     <Main/>
-    </div>
-
     <Footer/>
   </div>
 </template>

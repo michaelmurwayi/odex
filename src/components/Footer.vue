@@ -61,7 +61,7 @@
             solo
           >
       </v-text-field>
-        <v-btn style="background-color:white; text-color:black;" aria-placeholder="SUBSCRIBE" class="white">SUBSCRIBE</v-btn>
+        <button  class="btn btn-primary">SUBSCRIBE</button>
 
       </div>
       </div>

@@ -1,7 +1,6 @@
 <template>
-    <v-app  style="position:relative; top:0px; bottom:20vh; width:100%;">
-    <div class="Main">
-    <v-carousel hide-delimiters :controls="false" :show-arrows="false" :indicators="false" :interval="3000" direction="up" style="height:400px"
+    <v-app>
+    <v-carousel hide-delimiters :controls="false" :show-arrows="false" :indicators="false" style="height:650px;position:absolute; top:-16.5vh"
     >
     <v-carousel-item
       v-for="(item,i) in slides"
@@ -15,25 +14,29 @@
     
     </v-carousel-item>
     </v-carousel>
-    </div>
+
+
     <div class="services col-md-12  row container-fluid"  v-for="service in services" :key="service">
-        <ul style="line-height: 2.0em;">
+        <ul style="">
             <li>
                 {{ service  }}
             </li>
         </ul>
     </div>
-    <div style="position:relative; top:15vh; right:0px; left:50px;">
+
+    <div style="position:relative; top:75vh; right:0px; left:10px; font-size: 3.5vh;">
 
         <p> We are committed to doing this by:</p>
     </div>
-    <div class="commitment" v-for="commit in commits" :key="commit">
-        <ul style="line-height: 2.0em;">
-            <li>
+    
+    <div class="commitment" v-for="commit in commits" :key="commit" style="line-height: 55px;">
+        <ul >
+            <li style="margin-top:5vh;">
                 {{ commit  }}
             </li>
         </ul>
     </div>
+    
     </v-app>
 </template>
 <script>
@@ -79,29 +82,29 @@ export default {
      }
 </script>
 <style scoped>
-.products_card{
-    margin-left:25px;
-    margin-top: 10px;
-    width:15vw;
-    height:250px;
-    background-color: #CCCCFF;
-    display:flex;
-}
+
 .container{
-  height:400px;
+  height:600px;
   display: "flex"
 }
 .services{
   position:relative;
-  top:10vh;
+  top:60vh;
+  height: 30vh;
+  font-size: 3.5vh;
   right:0px;
-  left:50px;
+  left:10px;
+  color: #787878;
+  line-height: 55px;
 }
 .commitment{
-     position:relative;
-     top:15vh;
-     right:0px;
-     left:50px;
+    position:relative;
+    top:80vh;
+    font-size: 3.5vh;
+    right:0px;
+    left:10px;
+    color: #787878;
+    line-height: 55px;
 }
 .services_page{
     position:absolute;
