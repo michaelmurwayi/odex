@@ -16,9 +16,9 @@
     </v-carousel-item>
     </v-carousel>
     </div>
-    <div class="products col-md-12  row container-fluid"  style="position:absolute; top:60vh; width:100vw;">
+    <div class="products col-md-12  row container-fluid" >
       <v-container class="col-md-12  row container">
-        <div v-for="(product, index) in products" :key="product"  style="position:relative; top:10vh; margin-bottom:10vh">
+        <div v-for="(product, index) in products" :key="product" >
           <v-card class="products_card">
           <div class="col-md-12">
           <v-img style="width:80px; height:150px position relative; top:0px; left:90px;" :src="require('../assets/' + product)"></v-img>
@@ -81,10 +81,52 @@ export default {
     background-color:#28b6e7;
     opacity:0.8;
 }
+.products{
+    position:absolute;
+    top:60vh;
+    width:100vw;
+}
+.products_intro{
+    background-color: #28b6e7;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 400px;
+    width: 150px;
+    margin-left: 80px;
+    display:flex;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    font-size:50px;
+}
+.products_header{
+    position:relative;
+    top:"150px";
+    font-size: 8vh;
+    font-family: cursive;
+    text-align: right;
+    margin-top: 60px;
+}
+.product_image{
+  width:100px;
+  height:100px;
+  position: relative;
+  top:0px;
+  left:60px;
+}
+.products_lable{
+  position:absolute;
+  top:100px;
+  text-align:center;
+  color:#28b6e7;
+  font-size:2vh;
+}
+
 .products_card{
-    margin-left:50px;
-    width:18vw;
-    height:180px;
+    margin-top:35px;
+    width:20vw;
+    height:200px;
+    margin-left: 50px;
+    background-color: #F0F0F0;
     display:flex;
 }
 .container{
@@ -93,6 +135,7 @@ export default {
   height:850px;
   display: "flex"
 }
+
 @media only screen and (max-width: 768px) {
   .products_page{
     position:absolute;
@@ -127,16 +170,16 @@ export default {
     margin:px;
     width:60vw;
     height:25vh;
-    background-color:#E8E8E8;
+    background-color:#F0F0F0;
     display:flex;
-    margin-left: 5px;
+    margin-left: 55px;
   }
   .product_image{
   width:100px;
   height:100px;
   position: relative;
   top:0px;
-  left:60px;
+  left:30px;
   }
   .slide{
     position: relative;

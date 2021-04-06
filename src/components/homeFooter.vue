@@ -86,7 +86,7 @@
 .copyright{
      background-color: #28b6e7;
      position:absolute;
-     top:50vh;
+     top:55vh;
   }
 
 @media only screen and (max-width: 768px) {
