@@ -1,7 +1,7 @@
 <template>
-    <v-app  style="position:relative; top:0px; bottom:20vh; width:100%;">
+    <v-app  style="position:absolute; top:170px; bottom:20vh; width:100%;">
     <div class="Main">
-    <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" direction="up" style="height:400px"
+    <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" :show-arrows="false" direction="up" style="height:400px"
     >
     <v-carousel-item
       v-for="(item,i) in slides"
@@ -10,16 +10,16 @@
     >
     
     <v-card class="about_page" >
-        <v-card-title class="" style="position:relative; left:0px; top:20px; font-weight:bold; font-size: 8vh;">About Odex</v-card-title>
+        <v-card-title class="" style="position:relative; left:0px; top:15px; font-weight:bold; font-size: 8vh;">About Medilab Allied</v-card-title>
     </v-card>
     
     </v-carousel-item>
     </v-carousel>
     </div>
     <div class="services col-md-12  row container-fluid"  style="position:relative; top:10vh; right:0px; left:0px;">
-        <ul style="line-height: 2.0em;">
-            <p style="font-size:3vh">
-                Odex Chemicals Limited is a Kenyan company, which is committed to providing viable and cost effective hygiene products, solutions and services for its customers across various sectors. These sectors include Dairies, Soft Drink Plants, Brewing Industries, Food Processors, Healthcare, Housekeeping, Laundry, Hospitality Management, Institutional Market & Household Cleaners across East & Central Africa.
+        <ul style="line-height: 5.0em;">
+            <p style="font-size:4vh">
+                Medilab & Allied Products K Ltd is a Kenyan company, which is committed to providing Medical and Research Reagents and Consumables, Water treatment chemicals, Cooling Tower/Boiler/Chiller chemicals and Condition Monitoring reagents/Sensors.
             </p>
         </ul>
     </div>
@@ -35,47 +35,34 @@
             <v-card-title >Our Mission</v-card-title>
             <v-card-subtitle>
                 To manufacture & supply quality Industrial Hygiene products with exceptional service at affordable prices.
+                
             </v-card-subtitle>
         </div>
         <div class="col-md-3 about" >
-            <v-card-title >Our Core Values</v-card-title>
+            <v-card-title >Our Customers</v-card-title>
             <v-card-subtitle class="mt-5">
                 <ul>
                     <li>
-                    Excellent Customer Service
+                    Power Plants
                     </li>
                     <li>
-                    Respect Everyone
+                    Research Institutions
                     </li>
                     <li>
-                    Be Authentic
+                    Hospitals
                     </li>
                     <li>
-                    Continuous Improvement
-                    </li>
-                    <li>
-                    Reduce Waste
-                    </li>
-                    <li>
-                    Recycle
-                    </li>
+                    Food Processors
+                    </li>        
                 </ul>
+            </v-card-subtitle>
+                Across East and West Africa
+            <v-card-subtitle>
             </v-card-subtitle>
         </div>
         
     </div>
    
-    <div style="position:relative; top:15vh; right:0px; left:0px;">
-        <ul>
-
-        <p style="font-size:20px">
-            With more than 25 years of expertise and knowledge, Odex Chemicals manufactures specialized detergents and sanitation products, formulated to customer specifications and requirements. Odex consistently provides hygiene care products that meet customer and applicable regulatory requirements.
-        </p>
-        <p style="font-size:20px; margin-bottom:50px;">
-            We are committed to a sustainable environment and that is why we design our products to provide customers with the most effective and efficient cleaning, food safety and infection control with the lowest total impact on the environment. Odex has its headquarters in Nairobi, Kenya and employs approximately 100 people regionally.
-        </p>
-        </ul>
-    </div>
     </v-app>
 </template>
 <script>
@@ -124,7 +111,7 @@ export default {
 .about_page{
     position:absolute;
     top:150px;
-    left:650px;
+    left:450px;
     height:15vh;
     width: fit-content;
     background-color:#28b6e7;
@@ -140,14 +127,15 @@ export default {
 }
 .container{
   height:400px;
-  display: "flex"
+  background-color: red;
+  display: "flex";
 }
 .about-div{
-    position:relative;
-    top:20vh;
+    position:absolute;
+    top: 100vh;
     right:0px;
     left:100px;
-    margin-bottom:40px;
+    /* margin-bottom:40px; */
 }
 .about{
     width: 80%;

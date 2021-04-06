@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <div class="Main" style=" position:absolute; top:-130px; width:100%;">
+    <div class="main">
     <v-carousel
     cycle
     
@@ -70,7 +70,7 @@
           <v-img class="product_image" :src="require('../assets/' + product)"></v-img>
           </div>
           
-          <div class="col-md-12" style="position:absolute; top:100px; text-align:center; color:#28b6e7; font-size:2vh;">
+          <div class="col-md-12 products_lable" >
             <p>{{products_lable[index]}} </p>
           </div>
           
@@ -80,7 +80,7 @@
       </v-container>
       </div>
 
-      <div class="about row " style="position:absolute; top:160vh; right:10px; left:10px; background-position: 0 0; background-size: 100vw 100vh;">
+      <div class="about row ">
       
       <v-card
       class="card"
@@ -113,7 +113,7 @@
 
     <v-card
       class="card"
-      max-width="450"
+      max-width="400px"
       shaped
       style="box-shadow: 5px 5px 5px 5px grey;"
     >
@@ -274,6 +274,13 @@
   top:0px;
   left:60px;
 }
+.products_lable{
+  position:absolute;
+  top:100px;
+  text-align:center;
+  color:#28b6e7;
+  font-size:2vh;
+}
 
 .products_card{
     margin:5px;
@@ -284,7 +291,7 @@
 }
 .container{
   height:400px;
-  display: flex
+  display: flex;
 }
 
 .card{
@@ -294,10 +301,23 @@
   margin: 30px;
   max-width: 450;
 }
+.main{
+  position:absolute;
+  top:-130px;
+  width:100%;
+}
+.about{
+   position:absolute;
+   top:160vh;
+   /* right:10px;
+   left:10px; */
+   background-position: 0 0;
+   background-size: 100vw 100vh;
+}
 
 @media only screen and (max-width: 768px) {
-  .Main{
-    position: relative;
+  .main{
+    position: absolute;
     right: 0px;
     width: 100vw;
   }
@@ -309,7 +329,7 @@
   .products{
     background-color: white ;
     position: absolute;
-    top:120vh;
+    top: 0vh;
     left: 0px;
   }
   .products_intro{
@@ -322,25 +342,33 @@
     margin-bottom: 0px;
   }
   .products_header{
-    position:relative;
-    top:20px;
+    position:absolute;
+    top:15px;
     font-size: 4vh;
     text-align: center;
   }
   .products_card{
-    margin:px;
-    width:80vw;
+    margin:50px;
+    width:280px;
     height:25vh;
     background-color:#E8E8E8;
     display:flex;
-    margin-left: 30px;
+    margin-left: 15px;
   }
+  .products_lable{
+  position:absolute;
+  top:120px;
+  text-align:center;
+  color:#28b6e7;
+  font-size:2vh;
+}
+
   .product_image{
-  width:100px;
-  height:100px;
+  width:140px;
+  height:120px;
   position: relative;
   top:0px;
-  left:80px;
+  left:60px;
   }
   .container{
     height:auto;
@@ -352,12 +380,15 @@
     top:50vh;
   }
   .about{
-    position: absolute;
-    top:100vh;
-  
-  }
+   position:absolute;
+   top:260vh;
+   right:10px;
+   left:10px;
+   background-position: 0 0;
+   background-size: 100vw 100vh;
+}
   .card{
-  position:absolute;
+  position:relative;
   left:20px;
   top:220vh;
   width: 90vw;

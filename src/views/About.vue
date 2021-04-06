@@ -1,10 +1,8 @@
 <template>
-  <div class="" style="height:100vh;">
+  <div class="" >
     <Navbar/>
     
-    <div class="" style="height:50vh; position:relative; top:0px;">
     <Main/>
-    </div>
 
     <Footer/>
   </div>

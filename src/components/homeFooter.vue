@@ -93,15 +93,17 @@
   .footer{
     width:100vw;
     position:absolute;
-    top:300vh;
+    top:650vh;
     right: 10px;
     bottom:0px;
 }
   .copyright{
      background-color: #28b6e7;
      position:absolute;
-     top:163vh;
-     left: 10px;
+     top:181vh;
+     width: 500px;
+     left: 0px;
+     right: 0px;
   }
 }
 </style>

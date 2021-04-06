@@ -27,7 +27,7 @@
     </v-text-field>
     
 
-    <v-toolbar color="red" elevation="0" style="position:absolute; top:51px; left:0px; right:0px; height:15vh">
+    <v-toolbar color="white" elevation="0" style="position:absolute; top:50px; left:0px; right:0px; height:15vh">
     <div class="col-md-6">
         <v-img
             width="150px"
