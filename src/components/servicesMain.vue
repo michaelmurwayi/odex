@@ -1,6 +1,6 @@
 <template>
     <v-app>
-    <v-carousel hide-delimiters :controls="false" :show-arrows="false" :indicators="false" style="height:650px;position:absolute; top:-16.5vh"
+    <v-carousel hide-delimiters :controls="false" :show-arrows="false" :indicators="false" style=" background-color:red; height:600px;position:absolute; top:-16.5vh"
     >
     <v-carousel-item
       v-for="(item,i) in slides"
@@ -24,7 +24,7 @@
         </ul>
     </div>
 
-    <div style="position:relative; top:75vh; right:0px; left:10px; font-size: 3.5vh;">
+    <div style="position:relative; top:85vh; right:0px; left:10px; font-size: 3.5vh;">
 
         <p> We are committed to doing this by:</p>
     </div>
@@ -94,6 +94,7 @@ export default {
   font-size: 3.5vh;
   right:0px;
   left:10px;
+  background-color: ;
   color: #787878;
   line-height: 55px;
 }
@@ -118,8 +119,9 @@ export default {
 @media only screen and (max-width: 768px) {
     .services{
         position: relative;
-        top:0vh;
+        top:60vh;
         left: 10px;
+        font-size: 2.5vh;
     }
     
     .services_page{

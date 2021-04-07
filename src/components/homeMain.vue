@@ -233,7 +233,6 @@
 <style scoped>
 .display-4{
   position:absolute;
-  opacity: ;
   top: 150px;
   left: 0px;
   background-color: rgba(0, 116, 165, 0.6);
@@ -383,7 +382,7 @@
    position:absolute;
    top:260vh;
    right:10px;
-   left:10px;
+   left: 0px;
    background-position: 0 0;
    background-size: 100vw 100vh;
 }

@@ -9,32 +9,13 @@
     >
     
       <v-spacer></v-spacer>
-    <div class="mt-5 mr-15">
-    <p>Careers</p>
-
-    </div>
-    <v-text-field
-            name="search"
-            label="Search"
-            placeholder= "search"
-            height="5%"
-            width= "1"
-            background-color="white"
-            solo
-            prepend-icon= "mdi-magnify" class="search shrink"
-            
-          >
-    </v-text-field>
-    
-
     <v-toolbar color="white" elevation="0" style="position:absolute; top:50px; left:0px; right:0px; height:15vh">
     <div class="col-md-6">
         <v-img
-            width="150px"
-            height="12gvh"
-            class="col-md-6"
-            src= "../assets/logo.jpg"
-            style="position:relative; top:4vh;"
+            width="30vw"
+            height="8vh"
+            class="logo col-md-6"
+            src= "../assets/logo.png"
     ></v-img>
     </div>
     <div class="col-md-6">
@@ -73,6 +54,10 @@
     color: #28b6e7;
     text-decoration: none;
     width: 15px;
+}
+.logo{
+  position:relative;
+  top:4vh;
 }
 .search {
   position:relative;
@@ -147,28 +132,34 @@ a:hover,
 }
 
 @media only screen and (max-width: 768px) {
+  .logo{
+  position:relative;
+  top:2vh;
+}
   .navigate{
     height:30px;
     width: 100vw;
     font-size: 2.5vw;
-    position:static;
-    right: 200px;
-    /* left: -1s0px; */
-    padding-left: 20px;
-    top:11vh;
-    background: Transparent;
+    position:relative;
+    right: 150px;
+    padding-left: px;
+    top:8vh;
+    
 }
   .nav{
     position: relative;
     right: 10px;
   }
-  .search{
-    right:30px;
-    width:20;
 
-  }
-  .v-text-field{
-      width: 50px;
+.nav-content {
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  right: 150px;
+  padding: auto;
 }
 
 }

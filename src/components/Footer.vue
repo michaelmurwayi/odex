@@ -79,8 +79,8 @@
 <style scoped>
 .footer{
     width:100vw;
-    position:absolute;
-    top:155vh;
+    position:relative;
+    top:150vh;
     bottom:0px;
 }
 .copyright{
