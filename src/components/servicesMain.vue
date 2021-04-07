@@ -1,6 +1,6 @@
 <template>
     <v-app>
-    <v-carousel hide-delimiters :controls="false" :show-arrows="false" :indicators="false" style=" background-color:red; height:600px;position:absolute; top:-16.5vh"
+    <v-carousel hide-delimiters :controls="false" :show-arrows="false" :indicators="false" style="height:600px;position:absolute; top:-16.5vh"
     >
     <v-carousel-item
       v-for="(item,i) in slides"

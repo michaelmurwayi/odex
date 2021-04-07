@@ -80,6 +80,9 @@
      left: 0px;
      right: 0px;
   }
+  .links{
+  color: white;
+}
 }
 </style>
 <script lang="ts">
