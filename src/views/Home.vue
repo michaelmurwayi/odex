@@ -2,8 +2,7 @@
   <div class="home">
     <Navbar/>
     <Main/>
-    <Footer/>
-    
+    <Footer/> 
   </div>
 </template>
 
@@ -12,6 +11,8 @@ import { Component, Vue } from 'vue-property-decorator';
 import Navbar from '@/components/Navbar.vue'; // @ is an alias to /src
 import Main from '../components/homeMain.vue'
 import Footer from '../components/homeFooter.vue'
+import * as VueAos from 'vue-aos'
+Vue.use(VueAos)
 
 
 @Component({

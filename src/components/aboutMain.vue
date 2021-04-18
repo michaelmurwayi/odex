@@ -10,7 +10,7 @@
     >
     
     <v-card class="about_page" >
-        <v-card-title class="" style="position:relative; left:0px; top:15px; font-weight:bold; font-size: 8vh;">About Medilab Allied</v-card-title>
+        <v-card-title class="" style="position:relative; left:0px; top:15px; font-weight:bold; font-size: 8vh;">About </v-card-title>
     </v-card>
     
     </v-carousel-item>
@@ -18,7 +18,7 @@
     </div>
     <div class="services col-md-12  row container-fluid"  style="position:relative; top:10vh; right:0px; left:0px;">
         <ul style="line-height: 5.0em;">
-            <p style="font-size:4vh">
+            <p style="font-size:3vh">
                 Medilab & Allied Products K Ltd is a Kenyan company, which is committed to providing Medical and Research Reagents and Consumables, Water treatment chemicals, Cooling Tower/Boiler/Chiller chemicals and Condition Monitoring reagents/Sensors.
             </p>
         </ul>
@@ -111,7 +111,7 @@ export default {
 .about_page{
     position:absolute;
     top:150px;
-    left:450px;
+    left:650px;
     height:15vh;
     width: fit-content;
     background-color:#28b6e7;

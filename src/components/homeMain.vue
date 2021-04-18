@@ -4,7 +4,7 @@
     <v-carousel
     cycle
     
-    height="800"
+    height="700"
     hide-delimiter-background
     show-arrows-on-hover
     :show-arrows="false"
@@ -25,7 +25,7 @@
             <div class="display-3">
               <v-img
                 :src= "require('../assets/' + slide)"
-                height="800px"
+                height="700px"
                 width="100vw"
               ></v-img>
             </div>
@@ -84,29 +84,26 @@
       
       <v-card
       class="card"
-      max-width="450"
+      max-width="400"
       shaped
       style="box-shadow: 5px 5px 5px 5px grey;"
     >
       <v-img
         src="../assets/services.jpg"
+        max-width=""
         height="300px"
       ></v-img>
 
       <v-card-title>
         Our Services
+        
       </v-card-title>
       <v-card-text class="col-md-12 text-justified">
         We take the time to listen, understand and respond to customers' unique cleaning and hygiene needs.
       </v-card-text>
 
       <v-card-actions>
-        <v-btn
-          shaped
-          color="primary"
-        >
-          View All
-        </v-btn>
+       
         
       </v-card-actions>
     </v-card>
@@ -130,20 +127,13 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn
-          shaped
-          color="primary"
-          right
-        >
-          Find Out More
-        </v-btn>
-        
+       
       </v-card-actions>
     </v-card>
     
     <v-card
       class="card"
-      max-width="450"
+      max-width="400"
       shaped 
       style="box-shadow: 5px 5px 5px 5px grey;"
     >
@@ -160,12 +150,7 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn
-          shaped
-          color="primary"
-        >
-          Learn More
-        </v-btn>
+        
         
       </v-card-actions>
     </v-card>
@@ -243,14 +228,14 @@
 
 .products{
     position:absolute;
-    background-color:;
+    height: 500px;
     margin-top: 670px;
 }
 .products_intro{
     background-color: #28b6e7;
     color:white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 400px;
+    height: 600px;
     width: 150px;
     margin-left: 80px;
     display:flex;
@@ -261,10 +246,10 @@
 .products_header{
     position:relative;
     top:"150px";
-    font-size: 8vh;
+    font-size: 10vh;
     font-family: cursive;
     text-align: right;
-    margin-top: 60px;
+    margin-top: 150px;
 }
 .product_image{
   width:100px;
@@ -284,7 +269,7 @@
 .products_card{
     margin:5px;
     width:15vw;
-    height:150px;
+    height:200px;
     background-color: #CCCCFF;
     display:flex;
 }
@@ -307,7 +292,8 @@
 }
 .about{
    position:absolute;
-   top:160vh;
+   top:170vh;
+   margin-left: 10px;
    /* right:10px;
    left:10px; */
    background-position: 0 0;
@@ -389,9 +375,10 @@
   .card{
   position:relative;
   left:20px;
-  top:220vh;
-  width: 90vw;
+  top:200vh;
+  width: 80vw;
   margin: 10px;
+  margin-top: 100px;
 }
 }
 
