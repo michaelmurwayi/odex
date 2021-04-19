@@ -21,10 +21,10 @@
         <div v-for="(product, index) in products" :key="product" >
           <v-card class="products_card">
           <div class="col-md-12">
-          <v-img style="width:80px; height:150px position relative; top:0px; left:90px;" :src="require('../assets/' + product)"></v-img>
+          <v-img class="product_image" :src="require('../assets/' + product)"></v-img>
           </div>
           
-          <div class="col-md-12" style="position:absolute; top:120px; text-align:center; color:#28b6e7; font-size:2vh;">
+          <div class="col-md-12 products_lable" >
             <p>{{products_lable[index]}} </p>
           </div>
           
@@ -46,14 +46,14 @@ export default {
         ],
          products: [
             'kitchen.png',
-            'house.png',
-            'food.png',
+            'house.jpg',
+            'food.jpeg',
             'conveyer.png',
-            'care.png',
-            'workshop.png',
-            'laundry.png',
-            'water.png',
-            'special.png',
+            'personal.jpeg',
+            'workshop.jpeg',
+            'laundry.jpeg',
+            'water.jpeg',
+            'specials.jpeg',
         ],
         products_lable: [
             'KITCHEN HYGIENE',
@@ -107,30 +107,29 @@ export default {
     margin-top: 60px;
 }
 .product_image{
-  width:100px;
-  height:100px;
+  width:100%;
+  height:150px;
   position: relative;
   top:0px;
-  left:60px;
+  opacity: 0.8;
+  left:0px;
 }
 .products_lable{
   position:absolute;
-  top:100px;
+  top:200px;
   text-align:center;
   color:#28b6e7;
   font-size:2vh;
 }
-
 .products_card{
     margin-top:35px;
     width:20vw;
-    height:200px;
+    height:250px;
     margin-left: 50px;
     background-color: #F0F0F0;
     display:flex;
 }
 .container{
-  background-color:;
   margin-top: 20px;
   height:850px;
   display: "flex"
@@ -170,17 +169,25 @@ export default {
     margin:px;
     width:60vw;
     height:25vh;
-    background-color:#F0F0F0;
+    background-color: white;
     display:flex;
     margin-left: 55px;
   }
   .product_image{
-  width:100px;
-  height:100px;
+  width:100%;
+  height: 100px;
   position: relative;
   top:0px;
-  left:30px;
-  }
+  opacity: 0.8;
+  left:0px;
+}
+.products_lable{
+  position:absolute;
+  top: 130px;
+  text-align:center;
+  color:#28b6e7;
+  font-size:2vh;
+}
   .slide{
     position: relative;
     right: 0px;

@@ -52,8 +52,8 @@
 <style scoped>
 .footer{
     width:100vw;
-    position:relative;
-    top:150vh;
+    position:absolute;
+    top:160vh;
     bottom:0px;
 }
 .copyright{
@@ -69,14 +69,15 @@
   .footer{
     width:100vw;
     position:absolute;
-    top:350vh;
+    top: 2500px;
     right: 10px;
     bottom:0px;
+    font-family: cursive;
 }
   .copyright{
      background-color: #28b6e7;
      position:absolute;
-     top:175vh;
+     top: 153vh;
      left: 10px;
   }
   .links{

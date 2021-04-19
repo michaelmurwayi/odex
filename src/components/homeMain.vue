@@ -48,7 +48,7 @@
               <h2 style="font-size:8vh; margin-left:5vw;"> {{ headers[i].header }} </h2>
               <p style="font-size:4vh; margin-left:5vw;"> {{ headers[i].text }} </p>
               
-              <v-btn style=" background-color:white; color:  rgba(0, 116, 165, 0.6); font-size:3vh; margin-left:5vw; position:relative; top: -40px; "> learn More </v-btn>
+
               </v-carousel-item>
             </v-carousel>
             </div>
@@ -171,14 +171,14 @@
         ],
         products: [
             'kitchen.png',
-            'house.png',
-            'food.png',
+            'house.jpg',
+            'food.jpeg',
             'conveyer.png',
-            'care.png',
-            'workshop.png',
-            'laundry.png',
-            'water.png',
-            'special.png',
+            'personal.jpeg',
+            'workshop.jpeg',
+            'laundry.jpeg',
+            'water.jpeg',
+            'specials.jpeg',
         ],
         products_lable: [
             'KITCHEN HYGIENE',
@@ -208,7 +208,7 @@
           },
           { 
             header: '25 years of Experience',
-            text: "we manufacture specialized detergents and sanitation products"
+            text: ""
           },
       ]
       }
@@ -233,9 +233,9 @@
 }
 .products_intro{
     background-color: #28b6e7;
-    color:white;
+    color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 600px;
+    height: fit-content;
     width: 150px;
     margin-left: 80px;
     display:flex;
@@ -252,15 +252,16 @@
     margin-top: 150px;
 }
 .product_image{
-  width:100px;
+  width:100%;
   height:100px;
   position: relative;
   top:0px;
-  left:60px;
+  opacity: 0.8;
+  left:0px;
 }
 .products_lable{
   position:absolute;
-  top:100px;
+  top:150px;
   text-align:center;
   color:#28b6e7;
   font-size:2vh;
@@ -301,7 +302,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .main{
+.display-4{
+  position:absolute;
+  top: 150px;
+  left: 0px;
+  background-color: rgba(0, 116, 165, 0.6);
+  height:auto;
+  width: 100vw;
+  font-size: 0.5vh;
+}
+.main{
     position: absolute;
     right: 0px;
     width: 100vw;
@@ -319,30 +329,28 @@
   }
   .products_intro{
     background-color: #28b6e7;
-    height: 80px;
+    height: 200px;
     width: 100vw;
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 25px;
-    margin-bottom: 0px;
+    margin: 25px;
   }
   .products_header{
-    position:absolute;
-    top:15px;
-    font-size: 4vh;
+    position:relative;
+    top: -100px;
+    color: white;
+    font-size: 6vh;
     text-align: center;
   }
   .products_card{
     margin:50px;
     width:280px;
-    height:25vh;
+    height:30vh;
     background-color:#E8E8E8;
     display:flex;
     margin-left: 15px;
   }
   .products_lable{
   position:absolute;
-  top:120px;
+  top:150px;
   text-align:center;
   color:#28b6e7;
   font-size:2vh;
@@ -353,7 +361,7 @@
   height:120px;
   position: relative;
   top:0px;
-  left:60px;
+  left:50px;
   }
   .container{
     height:auto;
@@ -375,8 +383,8 @@
   .card{
   position:relative;
   left:20px;
-  top:200vh;
-  width: 80vw;
+  top:300vh;
+  width: 70vw;
   margin: 10px;
   margin-top: 100px;
 }

@@ -55,6 +55,7 @@
     position:absolute;
     top:150vh;
     bottom:0px;
+    font-family: cursive;
 }
 .copyright{
      background-color: #28b6e7;
@@ -68,9 +69,10 @@
   .footer{
     width:100vw;
     position:absolute;
-    top:650vh;
+    top:750vh;
     right: 10px;
     bottom:0px;
+    font-family: cursive;
 }
   .copyright{
      background-color: #28b6e7;
