@@ -1,32 +1,51 @@
 <template>
   <v-app>
     <v-footer dark padless inset fluid class="footer">
-    <div class="col-md-12 row" style="background-color:#0074a5; position:relative; left:12px">
+    <div class="col-md-12 row" style="background-color:rgba(66, 26, 76); position:relative; left:12px">
       <div class="col-md-4">
         <v-app-bar-title class="ml-3" style="font-size:4vh;">Contact Us </v-app-bar-title>
         <div class="col-md-8" style="line-height: 2.0em;">
-        <p style="font-size:2vh; color:black;">
+        <p style="font-size:2vh; color:#28b6e7;">
           MEDILAB AND ALLIED PRODUCTS (K)LTD,
           GENERAL WARUINGE ROAD,
           OLD RACE COURSE, STAREHE COURT 7638 (2),
           P.O BOX 14705-00400,
           NAIROBI, KENYA
-          TEL: +254 721 811 499, +254 734 768
-          110, +254 020 4401525, +254 774 768
-          110
+        </p>
+        <p>
+          <strong> Tel: </strong>
+          <ul>
+          <li>
+          <a href="tel:http://+254721811499" style="color:white;">+254721811499</a>, 
+          </li>
+
+          <li>
+          <a href="tel:http://+254 734 768110" style="color:white;">+254 734 768110</a>,
+          </li>
+
+          <li>
+          <a href="tel:http://+254 020 4401525" style="color:white;">+254 020 4401525</a>
+          </li>
+          </ul>
         </p>
           <p> <strong>Email:</strong></p>
-          <router-link to="" class="links"> info@medilaballied.com</router-link>
-          <router-link to="" class="links">
-           medilab.alliedproductsltd@gmail.com
-          </router-link>
+          <ul>
+          <li>
+
+          <a href="mailto:http://sales@medilaballied.com" style="color:white;">sales@medilaballied.com</a>
+          </li>
+          <li>
+
+          <a href="mailto:http://medilab.alliedproductsltd@gmail.com" style="color:white;">medilab.alliedproductsltd@gmail.com</a>
+          </li>
+          </ul>
       </div>
       </div>
 
       <div class="col-md-4">
         <v-app-bar-title class="ml-3" style="font-size:4vh;">Product Range </v-app-bar-title>
         <div class="col-md-8" v-for="product in products_label" :key= product style="line-height:0.05em;">
-        <p style="font-size:1.5vh; color:black">
+        <p style="font-size:1.5vh; color:#28b6e7">
           {{ product }}
         </p>
       </div>
@@ -35,7 +54,7 @@
       <div class="col-md-4">
         <v-app-bar-title class="ml-3" style="font-size:4vh;">OTHER LINKS</v-app-bar-title>
         <div class="col-md-8" v-for="link in other_links" :key= link style="line-height:0.1em;">
-        <p style="font-size:1.5vh; color:black"> {{ link }} </p>
+        <p style="font-size:1.5vh; color:#28b6e7"> {{ link }} </p>
       </div>
       </div>
 
@@ -56,11 +75,14 @@
     top:150vh;
     bottom:0px;
     font-family: cursive;
+    color: #28b6e7;
 }
 .copyright{
-     background-color: #28b6e7;
+     background-color: rgba(0, 0, 0);
      position:absolute;
-     top:55vh;
+     top:66vh;
+     font-family: cursive;
+
   }
 .links{
   color: white;
@@ -70,14 +92,15 @@
     width:100vw;
     position:absolute;
     top:750vh;
-    right: 10px;
+    right: 0px;
     bottom:0px;
     font-family: cursive;
+    font-size: 1.5vh;
 }
   .copyright{
-     background-color: #28b6e7;
+     background-color: rgba(66, 26, 76);
      position:absolute;
-     top:153vh;
+     top:150vh;
      width: 500px;
      left: 0px;
      right: 0px;

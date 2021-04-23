@@ -1,6 +1,5 @@
 <template>
-    <v-app class="" style="position:absolute; top:20vh; height:400px; bottom:; width:100%;">
-    <div class="Main">
+    <v-app>
     <v-carousel hide-delimiters :controls="false" :indicators="false" :show-arrows="false"  class="slide" show-arrows-on-hover
     >
     <v-carousel-item
@@ -15,7 +14,6 @@
     
     </v-carousel-item>
     </v-carousel>
-    </div>
     <div class="products col-md-12  row container-fluid" >
       <v-container class="col-md-12  row container">
         <div v-for="(product, index) in products" :key="product" >
@@ -126,7 +124,7 @@ export default {
     width:20vw;
     height:250px;
     margin-left: 50px;
-    background-color: #F0F0F0;
+    background-color: white;
     display:flex;
 }
 .container{

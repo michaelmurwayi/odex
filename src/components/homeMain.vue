@@ -2,12 +2,13 @@
   <v-app>
     <div class="main">
     <v-carousel
-    cycle
-    
+    cycle 
     height="700"
     hide-delimiter-background
     show-arrows-on-hover
     :show-arrows="false"
+    :controls="false"
+    :indicators="false"
     >
     <v-carousel-item
         v-for="(slide, i) in slides"
@@ -220,7 +221,7 @@
   position:absolute;
   top: 150px;
   left: 0px;
-  background-color: rgba(0, 116, 165, 0.6);
+  background-color: rgba(66, 26, 76, 0.6);
   height:auto;
   width: 60vw;
   font-size: 1vh;
@@ -232,7 +233,7 @@
     margin-top: 670px;
 }
 .products_intro{
-    background-color: #28b6e7;
+    background-color: rgba(66, 26, 76);
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: fit-content;
@@ -271,7 +272,7 @@
     margin:5px;
     width:15vw;
     height:200px;
-    background-color: #CCCCFF;
+    background-color: white;
     display:flex;
 }
 .container{
@@ -328,7 +329,7 @@
     left: 0px;
   }
   .products_intro{
-    background-color: #28b6e7;
+    background-color: rgba(66, 26, 76);
     height: 200px;
     width: 100vw;
     margin: 25px;
@@ -384,7 +385,7 @@
   position:relative;
   left:20px;
   top:300vh;
-  width: 70vw;
+  width: 80vw;
   margin: 10px;
   margin-top: 100px;
 }

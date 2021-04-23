@@ -1,5 +1,5 @@
 <template>
-    <v-app  style="position:absolute; top:170px; bottom:20vh; width:100%;">
+    <v-app>
     <div class="Main">
     <v-carousel hide-delimiters :controls="false" :indicators="false" :interval="3000" :show-arrows="false" direction="up" style="height:400px"
     >

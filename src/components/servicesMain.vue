@@ -17,19 +17,20 @@
 
 
     <div class="services col-md-12  row container-fluid"  v-for="service in services" :key="service">
-        <ul style="">
-            <li>
+        <ul>
+            <li class="margin-top:5vh;">
                 {{ service  }}
             </li>
+            <br>
         </ul>
     </div>
 
-    <div style="position:relative; top:85vh; right:0px; left:10px; font-size: 3.5vh;">
+    <div style="position:relative; top:85vh; right:0px; left:10px; font-size: 4vh;">
 
         <p> We are committed to doing this by:</p>
     </div>
     
-    <div class="commitment" v-for="commit in commits" :key="commit" style="line-height: 55px;">
+    <div class="commitment" v-for="commit in commits" :key="commit" style="line-height: 60px;">
         <ul >
             <li style="margin-top:5vh;">
                 {{ commit  }}
@@ -84,19 +85,20 @@ export default {
 <style scoped>
 
 .container{
-  height:600px;
+  height:700px;
   display: "flex"
 }
 .services{
   position:relative;
-  top:60vh;
+  top:70vh;
   height: 30vh;
   font-size: 3.5vh;
   right:0px;
   left:10px;
   background-color: ;
-  color: #787878;
-  line-height: 55px;
+  color: black;
+  line-height: px;
+  margin: 0 0 25px 0;
 }
 .commitment{
     position:relative;
@@ -104,8 +106,9 @@ export default {
     font-size: 3.5vh;
     right:0px;
     left:10px;
-    color: #787878;
-    line-height: 55px;
+    color: black;
+    line-height: 40px;
+    margin: 0 0 25px 0;
 }
 .services_page{
     position:absolute;
@@ -113,7 +116,7 @@ export default {
     left:650px;
     height:15vh;
     width: fit-content;
-    background-color:#28b6e7;
+    background-color:rgba(66, 26, 76);
     opacity:0.8;
   }
 @media only screen and (max-width: 768px) {
@@ -121,7 +124,7 @@ export default {
         position: relative;
         top:60vh;
         left: 10px;
-        font-size: 2.5vh;
+        font-size: 3.5vh;
     }
     
     .services_page{
@@ -130,7 +133,8 @@ export default {
         left:50px;
         height:15vh;
         width: fit-content;
-        background-color:#28b6e7;
+        font-size: 3.5vh;
+        background-color:rgba(66, 26, 76);
         opacity:0.8;
     }
 }

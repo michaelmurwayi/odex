@@ -2,7 +2,7 @@
     <v-app class="col-md-10" style="height:150px">
     <v-app-bar
       app
-      color="#28b6e7"
+      color="#421A4C"
       dark
       elevation="10"
       height="50vh"
@@ -51,7 +51,7 @@
 <style scoped>
 
 .nav {
-    color: #28b6e7;
+    color: ;
     text-decoration: none;
     width: 15px;
 }
@@ -125,8 +125,8 @@ a {
 .navlinks.active,
 a:hover,
 .navlinks:hover {
-  color: #00aeff;
-  border-bottom-color: #00aeff;
+  color: #421A4C;
+  border-bottom-color: #421A4C;
   transition: width 2.4s linear;
   transition-property: border-bottom;
 }
